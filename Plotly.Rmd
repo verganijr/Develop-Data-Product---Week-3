@@ -3,10 +3,10 @@ title: "Develop Data Product - Week 3 - Plotly"
 author: "Antonio Cesar Vergani Junior"
 date: "April 18, 2017"
 output:
-  word_document: default
-  pdf_document: default
   html_document:
     df_print: paged
+  word_document: default
+  pdf_document: default
 always_allow_html: yes
 ---
 
@@ -16,8 +16,20 @@ The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel
 
 Installing plotly package and load mtcars dataset. The source data contains 32 rows: 
 
+```{r, echo=TRUE, results=FALSE}
+
+library(plotly)
+
+data(mtcars)
+
+```
  
 ## Plotting scatter plot
 
 The interactive plot below shows a comparison between wt and mpg variables:
 
+```{r echo=TRUE}
+
+plot_ly(data=mtcars, x=~hp, y=~mpg, mode = "markers")
+
+```
