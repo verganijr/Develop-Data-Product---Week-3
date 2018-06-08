@@ -1,34 +1,36 @@
 ---
-title: "Develop Data Product - Week 3 - Plotly"
+title: "Plotly"
 author: "Antonio Cesar Vergani Junior"
-date: "May 18, 2018"
+date: "May 17, 2018"
 output:
-  html_document:
-    df_print: paged
-  word_document: default
-  pdf_document: default
-always_allow_html: yes
+  slidy_presentation: default
+  ioslides_presentation: default
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Data
+
 The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models). This data is pre-loaded during the R installation.
+
 
 ## Reading Data
 
 Installing plotly package and load mtcars dataset. The source data contains 32 rows: 
 
-```{r, echo=TRUE, results=FALSE}
+```{r, echo=TRUE, results=FALSE, warning=FALSE, message=FALSE}
 
 library(plotly)
 
 data(mtcars)
 
 ```
- 
-## Plotting scatter plot
 
-The interactive plot below shows a comparison between wt and mpg variables:
+## Interactive scatter plot
 
-```{r echo=TRUE}
+```{r echo=FALSE, message=FALSE}
 
 plot_ly(data=mtcars, x=~hp, y=~mpg, mode = "markers")
 
