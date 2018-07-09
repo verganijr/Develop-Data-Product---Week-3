@@ -14,10 +14,13 @@ The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel
 
 ## Reading Data
 
-Installing plotly package and load mtcars dataset. The source data contains 32 rows: 
+Installing plotly package and load mtcars dataset. The source data contains 32 rows.
 
  
 ## Plotting scatter plot
 
-The interactive plot below shows a comparison between wt and mpg variables:
+The interactive plot below shows a comparison between wt and mpg variables.
+
+Application link: https://verganijr.github.io/Develop_Data_Product_Week3/ 
+
 
