@@ -3,8 +3,8 @@ title: "Plotly"
 author: "Antonio Cesar Vergani Junior"
 date: "May 17, 2018"
 output:
-  slidy_presentation: default
   ioslides_presentation: default
+  slidy_presentation: default
 ---
 
 ```{r setup, include=FALSE}
